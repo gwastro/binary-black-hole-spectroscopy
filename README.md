@@ -30,6 +30,18 @@ Green regions/lines are from the analysis in which we allow both the masses and 
 
 We see that we obtain negligible constraints from the 21 mode. This is expected, as the 33 mode was the only sub-dominant harmonic with appreciable SNR in both events.
 
+## Software
+
+The analysis may be replicated using [PyCBC](pycbc.org) version 1.16.5 or later. In order to run the analysis, the [modified_hm_waveforms](https://github.com/cdcapano/modified_hm_waveforms) plugin must be installed. This package is what allows parameters to be modified separately for each sub-dominant harmonic. To install, first install `pycbc` using pip, then clone and install the `modified_hm_waveforms` plugin:
+```
+pip install "pycbc>=1.16.5"
+git clone https://github.com/cdcapano/modified_hm_waveforms
+cd modified_hm_waveforms
+python setup.py install
+```
+
+Once the `modified_hm_waveforms` package is installed, `pycbc` will automatically detect it at runtime; you do not need to reinstall pycbc in order to use it.
+
 ## Posterior files ##
 
 HDF files containing posterior samples for GW190412 and GW190814 may be found in the `posteriors` directory. The `posterior-all_params.hdf` file for each event contains the posterior samples from the analysis in which we allow the masses, phase, *and* spins measured by the sub-dominant harmonics to deviate from the dominant harmonic. The `posterior-mass_params.hdf` contains samples from the analysis in which we only allow phase and mass parameters to deviate.
@@ -82,6 +94,13 @@ The PSDs that were used in the analyses may also be found in the `data` group, i
 pycbc_plot_psd_file --psd-files {posterior_file} --hdf-group data --dyn-range-factor 1 --output-file psds.png
 ```
 
+## Configuration files
+
+The configuration files used in the analyses are in the `configuration` directory. These specify the prior, sampler, model used, and the data analyzed. The analyses may be replicated using by passing these files to the `pycbc_inference` executable. See the [pycbc inference documentation](http://pycbc.org/pycbc/latest/html/inference.html) for more details on usage.
+
+## Combining results
+
+The notebook [CombineResults.ipynb](CombineResults.ipynb) is what we used to combine the posteriors on chirp mass and symmetric mass ratio deviations between GW190412 and GW190814. The notebook can be run on the posterior files in this repository.
 
 ## License ##
 ![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/us/88x31.png "Creative Commons License")
