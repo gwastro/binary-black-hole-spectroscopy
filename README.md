@@ -50,40 +50,40 @@ Samples are stored as 1D arrays in the `samples` group in the posterior files. T
 
 Parameter | Description
 --------- | -----------
-`srcmass1` | the source-frame mass of the larger object, in solar masses.
-`srcmass2` | the source-frame mass of the smaller object, in solar masses.
-`spin1_a` | the magnitude of the dimensionless spin of the larger object.
+`srcmass1` | The source-frame mass of the larger object, in solar masses.
+`srcmass2` | The source-frame mass of the smaller object, in solar masses.
+`spin1_a` | The magnitude of the dimensionless spin of the larger object.
 `spin2_a` | "" smaller object.
-`spin1_azimuthal` | the azimuthal angle of the dimensionless spin of the larger object.
+`spin1_azimuthal` | The azimuthal angle of the dimensionless spin of the larger object.
 `spin2_azimuthal` | "" smaller object.
-`spin1_polar`| the polar angle of the dimensionless spin of the smaller object.
+`spin1_polar`| The polar angle of the dimensionless spin of the smaller object.
 `spin2_polar` | "" smaller object.
-`coa_phase` | the reference phase.
-`ra` | the right ascension of the binary, in radians.
-`dec` | the declination of the binary, in radians.
-`comoving_volume` | the comoving volume (in Mpc^3^). To convert to luminosity distance we use standard Lambda-CDM cosmology, with values from the Planck 2015 results [Ade et al., Astron. Astrophys. 594, A13 (2016)](https://doi.org/10.1051/0004-6361/201525830).
-`inclination` | the angle between the orbital angular momentum and the line of sight to the binary at the reference frequency (stored as `f_ref` in the file's `attrs`), in radians.
-`polarization` | the polarization angle of the gravitational wave, in radians.
-`delta_tc` | the difference between the measured coalescence time of the event and a reference GPS time, which is stored in the file's `attrs` as `trigger_time`.
-`fdiff_33_mchirp` | the fractional difference in the chirp mass between the 33 mode and the dominant mode.
+`coa_phase` | The reference phase.
+`ra` | The right ascension of the binary, in radians.
+`dec` | The declination of the binary, in radians.
+`comoving_volume` | The comoving volume (in Mpc<sup>3</sup>). To convert to luminosity distance we use standard Lambda-CDM cosmology, with values from the [Planck 2015 results](https://doi.org/10.1051/0004-6361/201525830).
+`inclination` | The angle between the orbital angular momentum and the line of sight to the binary at the reference frequency (stored as `f_ref` in the file's `attrs`), in radians.
+`polarization` | The polarization angle of the gravitational wave, in radians.
+`delta_tc` | The difference between the measured coalescence time of the event and a reference GPS time, which is stored in the file's `attrs` as `trigger_time`.
+`fdiff_33_mchirp` | The fractional difference in the chirp mass between the 33 mode and the dominant mode.
 `fdiff_21_mchirp` | "" 21 mode "".
-`fdiff_33_eta` | the fractional difference in the symmetric mass ratio between the 33 mode and the dominant mode.
+`fdiff_33_eta` | The fractional difference in the symmetric mass ratio between the 33 mode and the dominant mode.
 `fdiff_21_eta` | "" 21 mode "".
-`absdiff_33_coa_phase` | the difference in the reference phase between the 33 mode and the dominant mode.
+`absdiff_33_coa_phase` | The difference in the reference phase between the 33 mode and the dominant mode.
 `absdiff_21_coa_phase` | "" 21 mode ""
-`spin1_33_a` | (*not in the `mass_params` files*) the magnitude of the dimensionless spin of the larger object, as measured by the 33 mode.
+`spin1_33_a` | (*not in the `mass_params` files*) The magnitude of the dimensionless spin of the larger object, as measured by the 33 mode.
 `spin1_21_a` | "" 21 mode.
-`spin1_33_azimuthal` | (*not in the `mass_params` files*) the azimuthal angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
+`spin1_33_azimuthal` | (*not in the `mass_params` files*) The azimuthal angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
 `spin1_21_azimuthal` | "" 21 mode.
-`spin1_33_polar` | (*not in the `mass_params` files*) the polar angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
+`spin1_33_polar` | (*not in the `mass_params` files*) The polar angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
 `spin1_21_polar` | "" 21 mode.
-`spin2_33_a` | (*not in the `mass_params` files*) the magnitude of the dimensionless spin of the smaller object, as measured by the 33 mode.
+`spin2_33_a` | (*not in the `mass_params` files*) The magnitude of the dimensionless spin of the smaller object, as measured by the 33 mode.
 `spin2_21_a` | "" 21 mode. 
-`spin2_33_azimuthal` | (*not in the `mass_params` files*) the azimuthal angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
+`spin2_33_azimuthal` | (*not in the `mass_params` files*) The azimuthal angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
 `spin2_21_azimuthal` | "" 21 mode.
-`spin2_33_polar` | (*not in the `mass_params` files*) the polar angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
+`spin2_33_polar` | (*not in the `mass_params` files*) The polar angle of the dimensionless spin of the smaller object, as measured by the 33 mode.
 `spin2_21_polar` | "" 21 mode.
-`loglikelihood` | the log of the likelihood at the given point.
+`loglikelihood` | The log of the likelihood at the given point.
 
 The files contain metadata about the analysis, including the parameters that were fixed. These can be found in the files' `attrs`.
 
