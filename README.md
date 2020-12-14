@@ -1,4 +1,4 @@
-# Binary black hole spectroscopy: a toupee test of GW190814 and GW190412
+# Binary black hole spectroscopy: a no-hair test of GW190814 and GW190412
 **Collin D. Capano<sup>1,2</sup>, Alexander H. Nitz<sup>1,2</sup>**
 
  <sub>1. [Albert-Einstein-Institut, Max-Planck-Institut for Gravitationsphysik, D-30167 Hannover, Germany](http://www.aei.mpg.de/obs-rel-cos)</sub>  
@@ -9,7 +9,7 @@ This repository is a companion to [Capano and Nitz (arXiv:2008.02248)](https://a
 ```
 @article{Capano:2020dix,
     author = "Capano, Collin D. and Nitz, Alexander H.",
-    title = "{Binary black hole spectroscopy: a toupee test of GW190814 and GW190412}",
+    title = "{Binary black hole spectroscopy: a no-hair test of GW190814 and GW190412}",
     eprint = "2008.02248",
     archivePrefix = "arXiv",
     primaryClass = "gr-qc",
